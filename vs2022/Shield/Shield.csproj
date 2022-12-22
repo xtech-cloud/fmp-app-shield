@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resource\Icon\app.ico</ApplicationIcon>
+    <Company>XTC</Company>
+    <Version>1.0.0</Version>
+    <Authors>XTC</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\Icon\app.ico" />
+    <None Remove="Resource\Image\background.jpg" />
+    <None Remove="Resource\Image\background2.jpg" />
+    <None Remove="Resource\Image\SWITCH_OFF.png" />
+    <None Remove="Resource\Image\SWITCH_ON.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resource\Icon\app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Icon\app.ico" />
+    <Resource Include="Resource\Image\background.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\Image\background2.jpg" />
+    <Resource Include="Resource\Image\SWITCH_OFF.png" />
+    <Resource Include="Resource\Image\SWITCH_ON.png" />
+  </ItemGroup>
+
+</Project>
